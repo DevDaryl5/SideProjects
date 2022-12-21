@@ -1,0 +1,47 @@
+.body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* NAV BAR */
+
+.navBarOuter {
+    background: lightgray;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.navBarOuter p {
+    margin: 3px;
+    color: maroon
+}
+
+.navBarOuter p:hover {
+    color: aqua;
+    font-size: 20px;
+    transition: 20ms;
+}
+
+/* BANNER */
+
+.outerDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .banner div {
+    height: 400px;
+    width: 500px;
+} */
+
+.bannerImg {
+    height: 100px;
+    width: 100%;
+    background: red;
+}
+
+#img1 {
+    max-width: 100%;
+    /* max-height: 300px; */
+}
