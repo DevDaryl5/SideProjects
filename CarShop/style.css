@@ -8,7 +8,7 @@
 .navBarOuter {
     background: lightgray;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     padding: 5px;
 }
 
@@ -43,4 +43,30 @@
     display: flex;
     gap: 2px;
 
+}
+
+/* ACTUAL INFO */
+.innerDiv {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+    gap: 5px;
+}
+
+#inventory{
+    background: red;
+    height: 350px;
+    width: 33.33%;
+}
+
+#center {
+    background: yellow;
+    height: 350px;
+    width: 33.33%;
+}
+
+#visit {
+    background: blue;
+    height: 350px;
+    width: 33.33%;
 }
