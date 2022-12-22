@@ -5,22 +5,36 @@
 
 /* NAV BAR */
 
-.navBarOuter {
-    background: lightgray;
+nav {
     display: flex;
-    justify-content: right;
-    padding: 5px;
+    justify-content: space-between;
 }
 
-.navBarOuter p {
+.outer {
+    display: flex;
+    justify-content: right;
+}
+
+.outer p {
     margin: 3px;
     color: maroon
 }
 
-.navBarOuter p:hover {
+.outer p:hover {
     color: aqua;
     font-size: 20px;
     transition: 20ms;
+}
+
+.navBarOuter {
+    background: lightgray;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px;
+    height: 50px;
+    align-items: center;
 }
 
 /* BANNER */
@@ -31,7 +45,7 @@
     margin-top: 10px;
 }
 
-#img1 {
+#img1, #img2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -42,6 +56,7 @@
     width: 100%;
     display: flex;
     gap: 2px;
+    /* justify-content: space-evenly; */
 
 }
 
