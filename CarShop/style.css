@@ -13,6 +13,7 @@ nav {
 .outer {
     display: flex;
     justify-content: right;
+    
 }
 
 .outer p {
@@ -42,7 +43,8 @@ nav {
 .outerDiv {
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    gap: 15px;
 }
 
 #img1, #img2 {
@@ -71,8 +73,9 @@ nav {
 #inventory{
     background: lightblue;
     height: 350px;
-    width: 33.33%;
+    width: 30%;
     vertical-align: top;
+    border-radius: 10px;
 }
 
 ul {
@@ -83,18 +86,32 @@ ul li {
     padding: 15px;
 }
 
-#inventoryTitle {
+#inventoryTitle, #center, #visit{
     text-align: center;
 }
 
 #center {
     background: yellow;
     height: 350px;
-    width: 33.33%;
+    width: 30%;
+    border-radius: 10px;
 }
 
 #visit {
     background: blue;
     height: 350px;
-    width: 33.33%;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.review {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.review div {
+    background: rebeccapurple;
+    width: 20%;
+    height: 350px;
 }
