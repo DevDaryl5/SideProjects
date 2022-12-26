@@ -69,9 +69,22 @@ nav {
 }
 
 #inventory{
-    background: red;
+    background: lightblue;
     height: 350px;
     width: 33.33%;
+    vertical-align: top;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 15px;
+}
+
+#inventoryTitle {
+    text-align: center;
 }
 
 #center {
