@@ -70,13 +70,13 @@ nav {
     gap: 5px;
 }
 
-#inventory{
+/* #inventory{
     background: lightblue;
     height: 350px;
     width: 30%;
     vertical-align: top;
     border-radius: 10px;
-}
+} */
 
 ul {
     list-style: none;
@@ -88,20 +88,29 @@ ul li {
 
 #inventoryTitle, #center, #visit{
     text-align: center;
+    padding-top: 15px;
 }
 
-#center {
+/* #center {
     background: yellow;
     height: 350px;
     width: 30%;
     border-radius: 10px;
-}
+} */
 
-#visit {
-    background: blue;
+#visit, #inventory, #center {
+    background: lightgrey;
     height: 350px;
     width: 30%;
     border-radius: 10px;
+}
+
+#visit p {
+    padding: 10px;
+}
+
+#visit p:first-child , #inventory p:first-child{
+    font-weight: bolder;
 }
 
 .review {
