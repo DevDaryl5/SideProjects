@@ -1,0 +1,8 @@
+Database Create statements 
+
+CREATE TABLE users (
+    id mediumint NOT NULL auto_increment,
+    username char(20) NOT NULL unique,
+    password char(20) NOT NULL,
+	PRIMARY KEY (id)
+);
