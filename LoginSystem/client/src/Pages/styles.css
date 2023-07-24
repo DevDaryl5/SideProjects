@@ -1,0 +1,77 @@
+.body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* HOME */
+
+.main {
+    height: 100vh;
+    background-image: url('../../theater.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title p {
+    color: white;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .5;
+}
+
+/* LOGIN / REGISTER */
+
+.loginBanner, .registerBanner {
+    background-image: url('../../theater.webp');
+    height: 35vh;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.loginBanner p, .registerBanner p{
+    color: white;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    opacity: .5;
+}
+
+.login, .register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    /* width: 50vw; */
+
+}
+
+.loginCard, .registerCard {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: lightgray;
+    align-items: center;
+    /* border: 3px solid grey; */
+    box-shadow: 2px 2px grey;
+    border-width: thin;
+    border-radius: 10px;
+    width: 20vw;
+    height: 30vh;
+    margin-left: 43vw;
+    
+}
+
+.loginHome, .registerHome {
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    background: pink;
+}
