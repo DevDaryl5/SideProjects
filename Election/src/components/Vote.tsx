@@ -14,7 +14,7 @@ const VoteComponent = ({ }) => {
         };
     });
     return (
-            <div style={{
+            <div className="voteOuter" style={{
                 width: "80vw",
                 paddingLeft: "10%"
             }}>

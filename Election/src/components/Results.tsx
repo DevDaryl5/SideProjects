@@ -3,7 +3,7 @@ import { useState } from "react";
 import { votes, } from "../data/mockData";
 import React from 'react';
 import { ResultsType } from "../types/Results.type";
-// import { Results } from "../types/Results.type";
+import "./CandidateCard.css"
 
 const Results: React.FC<ResultsType> = ({ candidateId, description, name, party, pictureUrl, totalVotes, isWinner }) => {
     const [open, setOpen] = useState(false);
@@ -93,7 +93,7 @@ const Results: React.FC<ResultsType> = ({ candidateId, description, name, party,
             <Modal open={open} onClose={handleClose}
                 onClick={(e) => e.stopPropagation()}>
 
-                <Box sx={{
+                <Box className={"modal"} sx={{
                     position: 'absolute',
                     top: '10%',
                     left: '20%',
@@ -112,17 +112,17 @@ const Results: React.FC<ResultsType> = ({ candidateId, description, name, party,
                         <button style={{
                         }} onClick={handleClose}>Close</button>
                     </span>
-                    <div style={{
+                    <div className={"content"} style={{
                         display: "flex",
                         height: "30vh"
                     }}>
-                        <img src={pictureUrl} alt="" style={{
+                        <img className="picture" src={pictureUrl} alt="" style={{
                             height: "90%",
                             borderRadius: "20px",
                             paddingLeft: "10px",
                             paddingRight: "10px"
                         }} />
-                        <div style={{
+                        <div className="description" style={{
                             display: "flex",
                             flexDirection: "column",
 

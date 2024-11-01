@@ -1,0 +1,21 @@
+/* Mobile screens (480px and below) */
+@media (max-width: 600px) {
+  .content {
+    flex-direction: column;
+    height: 45vh !important;
+    padding-top: 2em;
+    align-items: center;
+  }
+  .picture {
+    justify-content: center;
+    width: 55% ;
+    /* height: 100vh; */
+  }
+  .modal {
+    height: 57vh;
+  }
+  .description {
+    padding: 10px;
+    font-size: 15px;
+  }
+}

@@ -2,6 +2,7 @@ import { Modal, Box } from "@mui/material";
 import { useState } from "react";
 import { Candidate } from "../types/Candidate.type"
 import React from 'react';
+import "./CandidateCard.css"
 
 const CandidateCard: React.FC<Candidate> = ({ candidateId, description, name, party, pictureUrl }) => {
     const [open, setOpen] = useState(false);
@@ -35,7 +36,7 @@ const CandidateCard: React.FC<Candidate> = ({ candidateId, description, name, pa
                 <span>{name}</span>
                 <span>{party}</span>
             </div>
-            <div className="picture" style={{
+            <div style={{
                 display: "flex",
                 justifyContent: 'center',
                 position: "relative"
@@ -63,7 +64,7 @@ const CandidateCard: React.FC<Candidate> = ({ candidateId, description, name, pa
             <Modal open={open} onClose={handleClose}
                 onClick={(e) => e.stopPropagation()}>
 
-                <Box sx={{
+                <Box className={"modal"} sx={{
                     position: 'absolute',
                     top: '10%',
                     left: '20%',
@@ -81,20 +82,19 @@ const CandidateCard: React.FC<Candidate> = ({ candidateId, description, name, pa
                         <button style={{
                         }} onClick={handleClose}>Close</button>
                     </span>
-                    <div style={{
+                    <div className="content" style={{
                         display: "flex",
                         height: "30vh"
                     }}>
-                        <img src={pictureUrl} alt="" style={{
+                        <img src={pictureUrl} className="picture" alt="" style={{
                             height: "90%",
                             borderRadius: "20px",
                             paddingLeft: "10px",
                             paddingRight: "10px"
                         }} />
-                        <div style={{
+                        <div className="description" style={{
                             display: "flex",
                             flexDirection: "column",
-
                         }}>
                             <span style={{
                                 fontSize: "30px",

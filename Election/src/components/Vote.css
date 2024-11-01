@@ -13,3 +13,12 @@ thead tr th, tbody td {
     text-align: left;
 }
 
+@media (max-width: 600px) {
+    thead tr th, tbody td {
+        font-size: 12px;
+    }
+     
+    .voteOuter {
+        padding-left: 5% !important;
+    }
+}
