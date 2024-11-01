@@ -59,7 +59,10 @@ function App() {
                 <Route path="/" element={
                     <div style={{
                         display: "flex",
-                        justifyContent: "space-evenly"
+                        justifyContent: "space-evenly",
+                        flexWrap: "wrap",
+                        gap: "1em",
+                        padding: "2em"
                     }}>
                         {candidates.map((candidate) => (
                             <CandidateCard key={candidate.candidateId} {...candidate} />
@@ -68,7 +71,10 @@ function App() {
                 <Route path="/results" element={
                     <div style={{
                         display: "flex",
-                        justifyContent: "space-evenly"
+                        justifyContent: "space-evenly",
+                        flexWrap: "wrap",
+                        gap: "1em",
+                        padding: "2em"
                     }}>
 
                         {orderedCandidates.map((candidate) => (

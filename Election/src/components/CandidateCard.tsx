@@ -45,14 +45,19 @@ const CandidateCard: React.FC<Candidate> = ({ candidateId, description, name, pa
                     borderRadius: "10px",
                 }} />
                 <span style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
                     position: "absolute",
+                    width: "15px",
+                    height: "15px",
                     bottom: "5px",
                     right: "15px",
                     borderRadius: "50%",
                     background: "red",
                     border: "white solid 2px",
                     padding: "4px",
-                    fontSize: "9px"
+                    fontSize: "9px",
                 }}>{candidateId}</span>
             </div>
             <Modal open={open} onClose={handleClose}
@@ -65,7 +70,6 @@ const CandidateCard: React.FC<Candidate> = ({ candidateId, description, name, pa
                     width: '60vw',
                     background: "#242424",
                     borderRadius: "10px"
-
                 }}>
                     <span style={{
                         display: "flex",

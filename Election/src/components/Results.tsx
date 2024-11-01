@@ -64,14 +64,19 @@ const Results: React.FC<ResultsType> = ({ candidateId, description, name, party,
                     borderRadius: "10px",
                 }} />
                 <span style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
                     position: "absolute",
+                    width: "15px",
+                    height: "15px",
                     bottom: "5px",
                     right: "15px",
                     borderRadius: "50%",
                     background: "red",
                     border: "white solid 2px",
                     padding: "4px",
-                    fontSize: "9px"
+                    fontSize: "9px",
                 }}>{candidateId}</span>
             </div>
             <div style={{

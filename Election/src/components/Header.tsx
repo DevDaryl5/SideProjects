@@ -38,7 +38,8 @@ function Nav() {
             <div style={{
                 display: "flex",
                 justifyContent: "space-between",
-                padding: "1em"
+                padding: "1em",
+                alignItems: "center"
             }}>
                 <div>
                     <p>{selectedPage}</p>
