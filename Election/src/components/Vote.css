@@ -1,0 +1,15 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 20px;
+}
+
+thead tr th, tbody td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #242424;
+    font-weight: bold;
+    text-align: left;
+}
+
