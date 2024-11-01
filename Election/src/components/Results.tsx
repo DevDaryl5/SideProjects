@@ -54,7 +54,7 @@ const Results: React.FC<ResultsType> = ({ candidateId, description, name, party,
                 <span>{name}</span>
                 <span>{party}</span>
             </div>
-            <div className="picture" style={{
+            <div style={{
                 display: "flex",
                 justifyContent: 'center',
                 position: "relative"
